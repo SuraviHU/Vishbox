@@ -100,10 +100,4 @@ tests/                  local unit tests
 
 The existing local MCP adapter check can be run with `.\.venv\Scripts\python.exe -m pytest tests\test_mcp.py`. Risk and classifier evaluation still need a documented, authorized dataset mapping before meaningful research claims can be made.
 
-## Viva preparation
 
-1. **Why use a multi-agent workflow?** It separates scenario orchestration, the simulated caller, the victim response, and analysis so each boundary can be inspected and replaced independently.
-2. **What does the risk equation mean here?** It averages victim persuasion intensity multiplied by a phishing-class score. The score is exploratory until its class direction and calibration are verified.
-3. **Why is the caller deterministic?** The current application is safe and reproducible offline; it demonstrates the workflow without providing adaptive scam-generation capability or requiring API keys.
-4. **Can the uploaded CSVs reproduce the paper’s classifier?** No. The label mapping is unknown, and the paper used different vishing and speech datasets.
-5. **What validation remains?** Source/license review, a properly split independent dataset evaluation, calibrated profiles, a consent-based human study, and ethics review for any voice or participant research.
