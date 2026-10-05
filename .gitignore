@@ -1,0 +1,8 @@
+.venv/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+models/
+data/processed/*.sqlite3

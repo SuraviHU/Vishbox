@@ -1,0 +1,12 @@
+services:
+  vishbox:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    volumes:
+      - ./data/processed:/app/data/processed
+      - ./data/raw:/app/data/raw:ro
+      - ./models:/app/models:ro
+    environment:
+      VISHBOX_MODEL_PATH: /app/models/klue-roberta-vishing
+    restart: unless-stopped
